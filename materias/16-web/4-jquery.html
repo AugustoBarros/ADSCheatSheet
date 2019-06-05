@@ -1,0 +1,230 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>jQuery</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Ferramentas de desenvolvimento WEB</a>
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li><a href="1-html.html">1 - HTML</a></li>
+                    <li><a href="2-css.html">2 - CSS</a></li>
+                    <li><a href="3-html5.html">3 - HTML 5</a></li>
+                    <li><a href="4-jquery.html">4 - jQuery</a></li>
+                    <li><a href="5-php.html">5 - PHP</a></li>
+                    <li><a href="#">6 - Ferramentas</a></li>
+                    <li><a href="apol.html">APOL's</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="topico">
+            <h1>O que é jQuery</h1>
+            <div class="conteudo">
+                <p>jQuery é uma biblioteca Java Script de código aberto, desenvolvida para simplificar os, scripts client side que interagem com o HTML.</p>
+                <p>A sintaxe do jQuery foi desenvolvida para tornar mais simples a navegação do documento HTML, a seleção de elementos DOM, criar animações, manipular eventos e desenvolver aplicações AJAX. Além de possibilitar a criação de plug-ins sobre ela.</p>
+                <p>Uma das linguagens de programação para web é a Java Script. JavaScript é uma linguagem orientada a objetos, desenvolvida para ser utilizada em páginas web. Serve para deixar a página dinâmica, animada, com recursos visuais e ainda mais atraente para os mecanismos de busca da web.</p>
+                <p>O jQuery fornece um grande número de vantagens durante o seu uso. Dentre elas, o acesso direto a qualquer componente dentro do DOM. O uso de regras de estilo não sofre qualquer tipo de limitação devido as inconsistências dos navegadores, tornando o site cross browser, ou seja, capaz de manipular conteúdo, sem limitação, com algumas poucas linhas de código, além de dar suporte para uma gama de eventos de interação com o usuário sem limitações impostas pelos navegadores.</p>
+
+                <p class="no-margin-bottom">Existem 2 maneiras de ligar a biblioteca jQuery a sua página HTML:</p>
+                <dl>
+                    <dt>A biblioteca jQuery pode ser armazenada em um arquivo.js, dentro de uma pasta no seu projeto, geralmente com o nome de “js” (para facilitar a organização). Para ligar o arquivo .js com a biblioteca jQuery ao seu HTML, basta utilizar o seguinte código:</dt>
+                    <dd><strong>&lsaquo;script</strong> type="text/javascript" src="jquery.js"<strong>&rsaquo;</strong></dd>
+
+                    <dt>Você também pode utilizar a biblioteca disponível online, pelo jQuery CDN ou pela biblioteca armazenada nos servidores da Google.</dt>
+                    <dd>
+                        <li>Armazenado no google <a href="https://developers.google.com/speed/libraries/#libraries">aqui</a></li>
+                        <li>Download do jQuery <a href="https://code.jquery.com/">aqui</a></li>
+                    </dd>
+                </dl>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Qual a definição de jQuery?</dt>
+                        <dd>Uma biblioteca de funções.</dd>
+
+                        <dt>Quem desenvolveu a linguagem JavaScript?</dt>
+                        <dd>Sun Microsystem e Netscape.</dd>
+
+                        <dt>Qual é a tag responsável por realizar a ligação dos arquivos .js ao documento html?</dt>
+                        <dd><strong>&lsaquo;script&rsaquo;</strong>.</dd>
+
+                        <dt>Basta possuir conhecimentos em:</dt>
+                        <dd>html, css e javascript.</dd>
+                    </dl>
+                </div>
+        </div>
+
+        <div class="topico">
+            <h1>Sintaxe Básica e Variáveis</h1>
+            <div class="conteudo">
+                <dl>
+                    <dt>A sintaxe jQuery é orientada para selecionar elementos HTML e efetuar ações. A sintaxe básica jQuery é:</dt>
+                    <dd><strong>$(seletorHTML).acao()</strong></dd>
+                    <dd>
+                        <li><strong>$</strong> é a definição de jQuery.</li>
+                        <li><strong>(seletorHTML)</strong> é o elemento que será animado.</li>
+                        <li><strong>.ação( )</strong> é a animação que será feita.</li>
+                    </dd>
+                    <dd>
+                        Exemplos:
+                        <li><strong>$("p")</strong> seleciona todos os elementos <strong>&lsaquo;p&rsaquo;</strong> da página.</li>
+                        <li><strong>$("p.intro")</strong> seleciona todos os elementos <strong>&lsaquo;p&rsaquo;</strong> com class="intro".</li>
+                        <li><strong>$("p#demo")</strong> seleciona o primeiro elemento <strong>&lsaquo;p&rsaquo;</strong> com id="demo".</li>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Assim como em JavaScript, PHP, e várias outras linguagens de programação, a declaração de variáveis em jQuery segue o padrão: var nome_da_variável = “dado”.</dt>
+                    <dd><strong>var nome = "jQuery";</strong></dd>
+                </dl>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Para selecionar objetos/elementos, a sintaxe jQuery utilizada é:</dt>
+                        <dd>$</dd>
+
+                        <dt>Sintaxe básica de jQuery:</dt>
+                        <dd>$(seletorHTML).ação();</dd>
+
+                        <dt>Qual declaração de variável abaixo apresenta a sintaxe correta?</dt>
+                        <dd>var nome_cliente = "Nome do cliente";</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Eventos</h1>
+            <div class="conteudo">
+                <p>Os eventos jQuery são peças-chave. As funções que realizam animações nos elementos são executadas quando “algo acontece” na página web, como: quando ela é carregada ou quando algo é clicado. Por meio dos eventos, conseguimos manipular os métodos com gatilhos (triggers) que serão disparados. Por exemplo, quando um determinado botão for clicado, você deverá chamar um método. O controle do evento será o clique do botão, que abrigará uma função fazendo com que o método seja invocado.</p>
+
+                <dl>
+                    <dt>Esta função indica que todo o método contido nela só será aplicado quando a página for carregada.</dt>
+                    <dd>
+                        <strong>
+                            &lsaquo;script type="text/javascript"&rsaquo; <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;$(document.ready(function) { <br />
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;}); <br />
+                            &lsaquo;/script&rsaquo;
+                        </strong>
+                    </dd>
+
+                    <dt>Quando o documento estiver pronto, será disponibilizada a função do clique no button. E, ao clique no button, o p deverá ser escondido.</dt>
+                    <dd>
+                        <strong>
+                            &lsaquo;script type="text/javascript"&rsaquo; <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;$(document.ready(function) { <br />
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("button").click(function() { <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("p").hide(); <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br />
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;}); <br />
+                            &lsaquo;/script&rsaquo;
+                        </strong>
+                    </dd>
+
+                    <dt>Lista completa dos eventos suportados pelo jQuery</dt>
+                    <dd><a href="https://api.jquery.com/category/events/">aqui</a></dd>
+                </dl>
+
+                <p>Por meio da manipulação dos eventos com jQuery é possível criar animações e interações, desde um simples botão na tela até buscar dados em servidores remotos. </p>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Função que indica que tudo será realizado quando a página for carregada:</dt>
+                        <dd>$(document).ready(function(){ ... });</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Métodos</h1>
+            <div class="conteudo">
+                <p>Os métodos jQuery são os códigos que irão gerar a animação ou criar um conteúdo dinâmico. Com jQuery é possível animar os elementos HTML, fazendo-os aparecerem e se esconderem de acordo com cada evento que ocorrerá na página, liberando o gatilho para que o método seja chamado.</p>
+
+                <dl>
+                    <dt><strong>$(selector).hide()</strong></dt>
+                    <dd>Esconde elementos HTML.</dd>
+
+                    <dt><strong>$(selector).show()</strong></dt>
+                    <dd>Mostra elementos HTML.</dd>
+
+                    <dt><strong>$(selector).toggle()</strong></dt>
+                    <dd>Altera a visibilidade de elementos HTML, com show() e hide().</dd>
+
+                    <dt><strong>$(selector).slideDown()</strong></dt>
+                    <dd>Faz um drillDown em elementos HTML.</dd>
+
+                    <dt><strong>$(selector).slideUp()</strong></dt>
+                    <dd>Faz um drillUp em elementos HTML.</dd>
+
+                    <dt><strong>$(selector).slideToggle()</strong></dt>
+                    <dd>Altera a visibilidade de elementos HTML, com slideUp e SlideDown.</dd>
+
+                    <dt><strong>$(selector).fadeIn()</strong></dt>
+                    <dd>Mostra suavemente elementos HTML.</dd>
+
+                    <dt><strong>$(selector).fadeOut()</strong></dt>
+                    <dd>Esconde suavemente elementos HTML.</dd>
+
+                    <dt><strong>$(selector).fadeTo()</strong></dt>
+                    <dd>Altera a visibilidade dos elementos HTML, indicando o nível de opacidade.</dd>
+
+                    <dt><strong>$(selector).animate()</strong></dt>
+                    <dd>Permite trocar o CSS do elemento selecionado, gerando anicações.</dd>
+
+                    <dt><strong>$(selector).css()</strong></dt>
+                    <dd>Define formatações CSS ao elemento selecionado.</dd>
+
+                    <dt><strong>$(selector).html()</strong></dt>
+                    <dd>Altera o conteúdo de elementos HTML.</dd>
+
+                    <dt><strong>$(selector).before()</strong></dt>
+                    <dd>Adiciona conteúdos antes do elemento HTML selecionado.</dd>
+
+                    <dt><strong>$(selector).after()</strong></dt>
+                    <dd>Adiciona conteúdos depois do elemento HTML selecionado.</dd>
+
+                    <dt><strong>$(selector).height()</strong></dt>
+                    <dd>Altera a altura do elemento HTML.</dd>
+
+                    <dt><strong>$(selector).width()</strong></dt>
+                    <dd>Altera a largura do elemento HTML.</dd>
+                </dl>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Qual método que une as funções de SlideUp e SlideDown?</dt>
+                        <dd>.slideToggle</dd>
+
+                        <dt>Qual a diferença entre os métodos css e animate?</dt>
+                        <dd>
+                            <li><strong>css</strong>: apenas altera as propriedades do elemento.</li>
+                            <li><strong>animate</strong>: possui callback e gera animação.</li>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css"  />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Matéria</a>
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li><a href="#">Aula 1</a></li>
+                    <li><a href="#">Aula 2</a></li>
+                    <li><a href="#">Aula 3</a></li>
+                    <li><a href="#">Aula 4</a></li>
+                    <li><a href="#">Aula 5</a></li>
+                    <li><a href="#">Aula 6</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Camisetas
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Masculinas</a></li>
+                            <li><a href="#">Femininas</a></li>
+                            <li><a href="#">Infantil</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="aula">
+            <h1>Aula</h1>
+            <small>Sub-titulo</small>
+        </div>
+
+        <div class="topico">
+            <span class="ui-icon ui-icon-note"></span>
+            <h2>Introdução</h2>
+        </div>
+        <div class="conteudo">
+            <div class="accordion">
+                <h3>Conteudo 1</h3>
+                <div>
+                    <p>texto</p>
+
+                    <div class="accordion afir-apol">
+                        <h3 class="afir-apol">Afimação na APOL</h3>
+                        <div>
+                            <dl>
+                                <dt>Pergunta</dt>
+                                <dd>Resposta</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="accordion apol">
+                        <h3 class="apol">Caiu na APOL</h3>
+                        <div>
+                            <dl>
+                                <dt>Pergunta</dt>
+                                <dd>Resposta</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <h3>Conteudo 2</h3>
+                <div>
+                    <p>texto</p>
+
+                    <div class="accordion apol">
+                        <h3 class="apol">Caiu na APOL</h3>
+                        <div>
+                            <dl>
+                                <dt>Pergunta</dt>
+                                <dd>Resposta</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <span class="ui-icon ui-icon-note"></span>
+            <h2>Topico</h2>
+        </div>
+        <div class="conteudo">
+            <div class="accordion">
+                <h3>Conteudo 1</h3>
+                <div>
+                    <p>texto</p>
+
+                    <div class="accordion apol">
+                        <h3 class="apol">Caiu na APOL</h3>
+                        <div>
+                            <dl>
+                                <dt>Pergunta</dt>
+                                <dd>Resposta</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <h3>Conteudo 2</h3>
+                <div>
+                    <p>texto</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="controlador" id="close"><span class="ui-icon ui-icon-folder-collapsed"></button>
+        <button class="controlador" id="open"><span class="ui-icon ui-icon-folder-open"></button>
+    </main>
+
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/js.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>

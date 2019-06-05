@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Ferramentas de desenvolvimento WEB</a>
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li><a href="1-html.html">1 - HTML</a></li>
+                    <li><a href="2-css.html">2 - CSS</a></li>
+                    <li><a href="3-html5.html">3 - HTML 5</a></li>
+                    <li><a href="4-jquery.html">4 - jQuery</a></li>
+                    <li><a href="5-php.html">5 - PHP</a></li>
+                    <li><a href="#">6 - Ferramentas</a></li>
+                    <li><a href="apol.html">APOL's</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="topico">
+            <h1>Seletores</h1>
+            <div class="conteudo">
+                <h2>Seletor de elementos</h2>
+                <p>É um comando usado para especificar um estilo para determiado elementos (ou pseudo-elementos) presentes no documento HTML.</p>
+
+                <h2>Seletor de classe</h2>
+                <p>Seleciona elementos com uma classe específica aplicado. Exempo: .destaque seleciona todos os elementos com a classe "destaque".</p>
+
+                <h2>Seletor de id</h2>
+                <p>Seleciona o elementos com a id especificaa. Exemplo: #cabecalho irá selecionar o elemento com id "cabecalho". Cada id é único e não pode ser repetido no mesmo documento.</p>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Como indicar os seletores de classes e IDs</dt>
+                        <dd>
+                            <li><strong>.</strong>classe</li>
+                            <li><strong>#</strong>ID</li>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Ordem de aplicação</h1>
+            <div class="conteudo">
+                <p>O arquivo HTML interpreta as formatações CSS de acordo com prioridades:</p>
+                <ul>
+                    <li>Utilização de <strong>!important</strong></li>
+                    <li>Formatação <strong>Inline</strong></li>
+                    <li>Formatação <strong>Head</strong></li>
+                    <li>Folha de estilos <strong>&lsaquo;link&rsaquo;</strong></li>
+                </ul>
+                <p>A prioridade também depende da posição da formação no documento, tanto nas tags HTML quanto no arquivo CSS.</p>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Dentre elas, por que a formatação "inline" é pouco utilizada?</dt>
+                        <dd>Por deixar o código HTML poluído.</dd>
+
+                        <dt>Qual é a ordem correta de importância?</dt>
+                        <dd>!important, Inline, Head, Folha de Estilos.</dd>
+                    </dl>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Box Model</h1>
+            <div class="conteudo">
+                <div class="image">
+                    <img src="../images/dom.png">
+                </div>
+                <div>
+                    <p>O Box Model nos permite adicionar uma borda em torno de elementos e, também, definir o espaço entre os elementos.</p>
+                    <ul>
+                        <li>Margin</li>
+                        <p>Lima uma área fora da borda. A margem é transparente.</p>
+
+                        <li>Border</li>
+                        <p>É a borda que envolve opreenchimento e conteúdo.</p>
+
+                        <li>Padding</li>
+                        <p>É a área transparente ao lado do conteúdo que separa o resto.</p>
+
+                        <li>Content</li>
+                        <p>É onde o conteúdo do box aparece, com textos e imagens.</p>
+                    </ul>
+                </div>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Qual o nome do diagrama que apresenta os elementos no DOM?</dt>
+                        <dd>Box Model.</dd>
+
+                        <dt>Qual a importância do Box Model?</dt>
+                        <dd>É importante durante a composição do layout.</dd>
+                    </dl>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Propriedades e atalhos</h1>
+            <div class="conteudo">
+                <p>Por meio das propriedades definidas é que as regras de formatação CSS são aplicadas dentro da página HTML. A combinação dessas propriedades faz com que cada elemento seja único dentro do seu documento.</p>
+                <ul>
+                    <li>Float</li>
+                    <p>
+                        Define onde o elemento HTML será posicionado, movendo-o para um ponto específico. <br />
+                        Os elementos com Float se alinha com o ponto do elemento parent, e então se movem para o ponto diponível mais próximo.
+                    </p>
+
+                    <li>Clear</li>
+                    <p>
+                        Se aplica para "limpar" os elementos abaixo dos elementos com float.<br />
+                        Utiliza-se Clear quando todos os elementos filhos estão com float.
+                    </p>
+
+                    <li>Position</li>
+                    <p>Define a posição dos elementos que possuem um valor estático.</p>
+
+                    <li>Z-Index</li>
+                    <p>Define o posicionamento do elemento em relação ao fundo da página e aos elementos que o sobrepõem.</p>
+
+                    <li>Display</li>
+                    <p class="no-margin-bottom">Define qual maneira o elemento estará disposto na tela:
+                    <ul>
+                        <li><strong>None</strong>: o elemento não aparecerá na tela.</li>
+                        <li><strong>Block</strong>: o elemento estará disposto em bloco.</li>
+                        <li><strong>Inline</strong>: o elemento estará disposto em linha.</li>
+                        <li><strong>Inline-Block</strong>: o elemento estará disposto em blocos alinhados em linha.</li>
+                    </ul>
+                    <br />
+
+                    <li>Overflow</li>
+                    <p class="no-margin-bottom"> Define o tratamento da sobra do elemento:</p>
+                    <ul>
+                        <li><strong>Visible</strong>: valor padrão; mantém a sobre do elemento visível.</li>
+                        <li><strong>Auto</strong>: adiciona uma barra de rolagem quando o elemento filho sobra.</li>
+                        <li><strong>Hidden</strong>: esconde a sobra do elemento</li>
+                        <li><strong>Scroll</strong>: sempre adiciona uma barra de rolagem, mesmo quando não form necessário.</li>
+                    </ul>
+
+                    <div class="apol">
+                        <h3>Caiu na Apol</h3>
+                        <dl>
+                            <dt>O que a propriedade display define?</dt>
+                            <dd>Define de qual maneira o elemento será disposto na tela.</dd>
+
+                            <dt>Qual a diferença entre Float e Clear</dt>
+                            <dd>
+                                <li><strong>Float</strong> define onde o elemento HTML será posicionado, movendo-o para um ponto específico.</li>
+                                <li><strong>Clear</strong> se aplica para "limpar" os elementos abaixo dos elementos com Float</li>
+                            </dd>
+                        </dl>
+                    </div>
+                </ul>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>O que define a propriedade float?</dt>
+                        <dd>O posicionamento do elemento para o ponto mais próximo.</dd>
+                    </dl>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>CSS e HTML</h1>
+            <div class="conteudo">
+                <p>Quando um navegador lê uma informação do CSS, ele irá decodificar essa informação e formatar o documento HTML de acordo com as informações constantes no CSS.</p>
+
+                <p class="no-margin-bottom">Há três maneiras de inserir regras de formatação em um arquivo HTML</p>
+                <dl>
+                    <dt>Formatação <strong>inline</strong>.</dt>
+                    <dd>
+                        <li>A formatação Inline é a formatação dentro das tags HTML, como atributo. O CSS inline é pouco utilizado em websites por deixar o código “poluído” com muita informação, mas é muito utilizado na criação de mailings e E-mail marketing.</li>
+                        <li>Sua utilização é bem simples, para usá-lo, basta inserir o <strong>style</strong> dentro da própria tag html que ele receberá o efeito.</li>
+                        <li>Como ele é aplicado diretamente naquela tag específica, é impossível reutilizá-lo ele em outra tag, tendo que sempre copiar e colar ou criar um novo para cada tag que você queira estilizar.</li>
+                    </dd>
+
+                    <dt>Formatação na <strong>tag head</strong>.</dt>
+                    <dd>É a formatação dentro da tag Head, como um conteúdo não-visível ao usuário. Também conhecida como folha de estilo interna, essa regra de formatação pode ser usada se uma única página tem um estilo único.</dd>
+
+                    <dt>Folha de estilos ligada ao HTML.</dt>
+                    <dd>
+                        <li>Esta é a declaração de CSS mais utilizada – a externa. Basicamente, ela consiste em colocarmos todo o código CSS em um arquivo externo .css e no HTML apenas “puxarmos” esse arquivo para que o código seja estilizado.</li>
+                        <li>Este é o método que apresenta maior versatilidade. Um arquivo externo CSS pode ser ligado a quantas páginas desejarmos, desta forma deixando a manutenção de um site muito mais fácil (apenas um arquivo CSS pode controlar o visual de um site inteiro).</li>
+                        <li>Para este método, utilizamos o elemento link, da seguinte forma: </li>
+                        <ul class="no-margin-bottom"><li><strong>&lsaquo;link</strong> href="css/arquivo.css" rel="stylesheet"<strong>&rsaquo;</strong></li></ul>
+                        <li>A tag link é uma tag que auto-fecha.</li>
+                        <li>O atributo <strong>href</strong> indica o endereço do arquivo CSS (hiper-referência), neste exemplo um arquivo chamado "arquivo.css" dentro de uma pasta "css".</li>
+                        <li>O atributo <strong>rel</strong> determina a relação deste link com a página, aqui sendo <strong>stylesheet</strong> (ou folha de estilos).</li>
+                    </dd>
+                </dl>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>CSS é uma linguagem para?</dt>
+                        <dd>Aplicar formatação às páginas HTML.</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>

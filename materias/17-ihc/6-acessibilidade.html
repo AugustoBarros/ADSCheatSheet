@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>6 - Acessibilidade W3C e WCAG</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css"  />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Interação Humano Computador</a>
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li><a href="1-design-sistemas-interativos.html">1 - O design de SI</a></li>
+                    <li><a href="2-o-processo-do-design-de-sistemas-interativos-centrado-no-humano.html">2 - O processo do design de SI</a></li>
+                    <li><a href="3-entendimento.html">3 - Entendimento</a></li>
+                    <li><a href="4-design-para-a-experiencia.html">4 - Design para experiência</a></li>
+                    <li><a href="5-avaliacao.html">5 - Avaliação</a></li>
+                    <li><a href="6-acessibilidade.html">6 - Acessibilidade e Usabilidade</a></li>
+                    <li><a href="apol.html">APOL's</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="aula">
+            <div class="util-meio">
+                <h1 class="aula">Acessibilidade W3C e WCAG</h1>
+                <small>Usabilidade e Diretrizes de Design</small>
+            </div>
+
+            <div class="topico">
+                <span class="ui-icon ui-icon-note"></span>
+                <h2>O bom design</h2>
+            </div>
+            <div class="conteudo">
+                <div class="accordion">
+                    <h3>Introdução</h3>
+                    <div>
+                        <p>Os assuntos que vamos estudar, dessa vez, são: acessibilidade, usabilidade e diretrizes de design.</p>
+                        <p>O objetivo, então, é entender que não há uma única maneira simples de resumir o bom design, apresentando uma cobertura abrangente do que seja acessibilidade relacionando-o à legislação, ao design universal e ao design inclusivo.</p>
+                        <p>Apresentar a ideia de usabilidade, colocando-a no contexto da visão moderna de design e da origem da ideia.</p>
+                        <p>Apresentar ideias de aceitabilidade como usabilidade + contexto.</p>
+                        <p>E descrever os doze princípios de design, para garantir que os sistemas tenham um alto grau de usabilidade.</p>
+                        <p>A usabilidade sempre foi a principal busca da interação humano-computador (IHC).</p>
+                        <p>A definição original de usabilidade é de que os sistemas devem ser fáceis de usar e de aprender, flexíveis e devem despertar nas pessoas uma boa atitude (SHACKEL, 1990).</p>
+                        <p>A acessibilidade é, hoje, um dos principais objetivos do design, bem como a sustentabilidade.</p>
+                        <p>As metas da usabilidade, hoje, são vistas, essencialmente, como preocupadas com a eficiência e eficácia dos sistemas.</p>
+
+                        <div class="accordion apol">
+                            <h3 class="apol">Caiu na APOL</h3>
+                            <div>
+                                <dl>
+                                    <dt>Sobre os Pontos de Vista do Bom Design:</dt>
+                                    <dd>
+                                        <li>Um dos pontos de vista é que ‘o objetivo do designer de sistemas interativos é produzir sistemas e produtos que sejam acessíveis, usáveis, e social e economicamente aceitáveis’.</li>
+                                        <li>Outro é que ‘o objetivo do designer de sistemas interativos é produzir sistemas que possam ser aprendidos, que sejam eficazes e adaptáveis’.</li>
+                                        <li>Um terceiro ponto de vista é o de que ‘o objetivo do designer de sistemas interativos é equilibrar os elementos PACT com respeito a um domínio’.</li>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Síntese</h3>
+                    <div>
+                        <p>O bom design consiste em usabilidade, ou seja, consiste em garantir que os sistemas sejam acessíveis a todos e que os designs sejam aceitáveis para as pessoas e os contextos nos quais serão usados.</p>
+                        <p>Os designers precisam avaliar seus designs junto às pessoas e trazê-las para participar do processo de trabalho.</p>
+                        <p>A atenção aos princípios do design pode ajudar a sensibilizar o designer quanto aos aspectos-chave do bom design.</p>
+                        <p>O acesso a sistemas interativos para todas as pessoas é um direito importante. </p>
+                        <p>A usabilidade preocupa-se com o equilíbrio dos elementos PACT em um domínio.</p>
+                        <p>E a aceitabilidade preocupa-se em garantir que os designs sejam adequados aos contextos de uso.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Conceituação</h3>
+                    <div>
+                        <p>O bom design não pode ser resumido de maneira simples, assim como as atividades do designer de sistemas interativos, particularmente se ele adotar uma abordagem de design centrada no humano.</p>
+                        <ul>
+                            <li>Um dos pontos de vista pode ser que “o objetivo do designer de sistemas interativos é produzir sistemas e produtos que sejam acessíveis, usáveis, e social e economicamente aceitáveis”.</li>
+                            <li>Outro pode ser que “o objetivo do designer de sistemas interativos é produzir sistemas que possam ser aprendidos, que sejam eficazes e adaptáveis”.</li>
+                            <li>Um terceiro ponto de vista pode ser o de que “o objetivo do designer de sistemas interativos é equilibrar os elementos PACT com respeito a um domínio”.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Três aspectos principais</h3>
+                    <div>
+                        <p>A acessibilidade diz respeito à remoção de barreiras que, de outra forma, excluiriam totalmente algumas pessoas de usar o sistema. A usabilidade refere-se à qualidade da interação em termos de parâmetros, como o <strong>tempo consumido na realização de tarefas</strong>, o <strong>número de erros cometidos</strong> e o <strong>tempo necessário para tornar um usuário competente.</strong></p>
+                        <p>A aceitabilidade refere-se à adequação para o propósito no contexto de uso. Inclui também as preferências pessoais que contribuem para que um usuário “simpatize” ou não com um artefato.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Acessibilidade</h3>
+                    <div>
+                        <p>O acesso a espaços físicos para pessoas deficientes há muito tempo é um requisito ético e legal importante. E isso é cada vez mais verdadeiro, também, para os espaços de informação.</p>
+                        <p>As Nações Unidas e o World Wide Web Consortium (W3C) expediram declarações e diretrizes no sentido de que todos tenham acesso às informações transmitidas por meio de tecnologias de software.</p>
+                        <p>Com um número cada vez maior de usuários de computadores e tecnologias, os designers têm de se concentrar nas exigências que seus designs representam para a capacidade das pessoas. O designer tem de criar para idosos e crianças. Newell (1995) ressalta que os problemas que afetam pessoas comuns em ambientes extraordinários (por exemplo, sob estresse, pressão de tempo, etc.) são frequentemente semelhantes aos problemas que afetam as pessoas com deficiências em ambientes comuns.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Exclusões</h3>
+                    <div>
+                        <p>As pessoas são excluídas do acesso aos sistemas interativos por uma série de razões:</p>
+                        <ul>
+                            <li><strong>Fisicamente</strong>, em decorrência da localização inadequada do equipamento ou porque dispositivos de entrada e saída exigem demais de suas habilidades.</li>
+                            <li><strong>Conceitualmente</strong>, porque não conseguem entender instruções complicadas ou comandos obscuros, ou porque não conseguem formar um modelo mental claro do sistema.</li>
+                            <li><strong>Economicamente</strong>, se não têm meios para comprar alguma tecnologia que seja essencial.</li>
+                        </ul>
+                        <p>Exclusões culturais ocorrem quando os designers fazem suposições inadequadas sobre como as pessoas trabalham e organizam a vida.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Superando barreiras</h3>
+                    <div>
+                        <p>Vencer essas barreiras ao acesso é uma consideração fundamental do design. Duas das principais abordagens do design visando à acessibilidade são o “design para todos” e o design inclusivo. O design para todos (conhecido também como design universal) vai além do design de sistemas interativos, sendo aplicado a todos os empreendimentos de design. Ele se baseia em determinada abordagem filosófica do design condensada por uma comunidade internacional de design.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Design inclusivo</h3>
+                    <div>
+                        <p>Se um design funciona bem para pessoas com deficiências, funciona melhor para todo mundo. A qualquer momento em nossa vida, a autoestima, a identidade e o bem-estar são profundamente afetados pela nossa capacidade de funcionar em nosso ambiente físico, com uma sensação de conforto, independência e controle.</p>
+                        <p><em>Usabilidade e estética são mutuamente compatíveis.</em></p>
+                        <p>O design inclusivo é uma abordagem mais pragmática segundo a qual frequentemente haverá razões (por exemplo, técnicas ou financeiras) pelas quais a inclusão total é inatingível.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Princípios do design universal</h3>
+                    <div>
+                        <ul>
+                            <li><strong>Uso equitativo</strong>: o design não prejudica ou estigmatiza nenhum grupo de usuários.</li>
+                            <li><strong>Flexibilidade no uso</strong>: o design acomoda uma ampla variedade de preferências e habilidades individuais.</li>
+                            <li><strong>Uso simples e intuitivo</strong>: o uso do design é fácil de entender, independentemente da experiência, do conhecimento, das habilidades linguísticas ou do nível de concentração do usuário no momento.</li>
+                            <li><strong>Informação perceptível</strong>: o design comunica a informação necessária efetivamente ao usuário, independentemente das condições do ambiente ou das habilidades sensoriais do usuário.</li>
+                            <li><strong>Tolerância ao erro</strong>: o design minimiza perigos e consequências adversas de ações acidentais ou não intencionais.</li>
+                            <li><strong>Baixo esforço físico</strong>: o design pode ser usado eficiente e confortavelmente, e com um mínimo de fadiga.</li>
+                            <li><strong>Tamanho e espaço para aproximação e uso</strong>: tamanho apropriado e espaço são oferecidos para aproximação, alcance, manipulação e uso, independentemente do tamanho do corpo, postura ou mobilidade do usuário.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topico">
+                <span class="ui-icon ui-icon-note"></span>
+                <h2>Acessibilidade</h2>
+            </div>
+            <div class="conteudo">
+                <div class="accordion">
+                    <h3>Introdução</h3>
+                    <div>
+                        <p>Como meio de garantir que um sistema seja acessível, um designer deve:</p>
+                        <ul>
+                            <li>Incluir pessoas com necessidades especiais na análise dos requisitos e nos testes dos sistemas existentes.</li>
+                            <li>Considerar se novas características afetarão os usuários com necessidades especiais (positivamente ou negativamente) e anotar isso nas especificações.</li>
+                            <li>Levar em consideração as diretrizes – incluir avaliações contrárias às diretrizes.</li>
+                            <li>Incluir usuários com necessidades especiais nos testes de usabilidade e nos testes beta.</li>
+                        </ul>
+
+                        <div class="accordion apol">
+                            <h3 class="apol">Caiu na APOL</h3>
+                            <div>
+                                <dl>
+                                    <dt>Sobre a Acessibilidade:</dt>
+                                    <dd>
+                                        <li>Incluir pessoas com necessidades especiais na análise dos requisitos e nos testes dos sistemas existentes.</li>
+                                        <li>Considerar se novas características afetarão os usuários com necessidades especiais e anotar nas especificações.</li>
+                                        <li>Levar em consideração as diretrizes incluir avaliações contrárias às diretrizes.</li>
+                                        <li>Incluir usuários com necessidades especiais nos testes de usabilidade e nos testes beta.</li>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Tecnologias de auxílio</h3>
+                    <div>
+                        <p>Existe uma série de tecnologias de auxílio, como navegadores que leem páginas da internet e ampliadores de tela que permitem às pessoas ajustar e movimentar a área de interesse. A entrada de voz está cada vez mais acessível, não só para entrada de texto, mas também para substituir o controle pelo mouse/teclado. Há também os filtros para teclado que compensam tremores, movimentos descontrolados e lentidão de resposta.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Opções de acessibilidade</h3>
+                    <div>
+                        <p>O sistema operacional MS Windows tem a Opção de Acessibilidade (sob o Painel de Controle), que permite ajustar teclado, som, alertas visuais e legendas para sons. A exibição pode ser alterada, inclusive com ajustes para alto contraste, e as configurações do mouse podem ser ajustadas. O painel de controle de Acesso Universal do Mac oferece opções semelhantes.</p>
+                        <p>Um leitor de tela produz saída de voz sintetizada para o texto mostrado na tela, bem como para as teclas digitadas. Navegadores baseados em voz usam a mesma tecnologia dos softwares leitores de telas, mas seu design é feito especificamente para uso na internet.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Acessibilidade à Web</h3>
+                    <div>
+                        <p>A acessibilidade à Web é uma área particularmente importante, já que muitos sites excluem pessoas que não são perfeitamente saudáveis e capazes. A conferência W4A e o grupo SIGACCES da ACM, contêm muitos documentos e discussões especializados.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Design para todos</h3>
+                    <div>
+                        <p>Em grande parte, o design para todos é simplesmente o bom design. O objetivo é atender a uma gama mais ampla possível de habilidades humanas. Considerando as questões de acesso nos estágios precoces do processo de design, este, no geral, será melhor para todos. Stephanidis (2001) fornece uma série de pontos de vista sobre como isso pode ser alcançado, desde novas “arquiteturas” para computadores que possam acomodar diferentes interfaces para diferentes pessoas, até processos que gerem requisitos melhores, incluindo a consideração de dispositivos de entrada e saída alternativos e a adoção de padrões internacionais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topico">
+                <span class="ui-icon ui-icon-note"></span>
+                <h2>Usabilidade</h2>
+            </div>
+            <div class="conteudo">
+                <div class="accordion">
+                    <h3>Introdução</h3>
+                    <div>
+                        <p>Um sistema com alto grau de usabilidade terá as seguintes características:</p>
+                        <ul>
+                            <li>Será eficiente, no sentido de que as pessoas poderão fazer coisas mediante uma quantidade adequada de esforço.</li>
+                            <li>Será eficaz no sentido de que conterá as funções e o conteúdo de informações adequadas e organizadas de forma apropriada.</li>
+                            <li>Será fácil aprender como fazer as coisas e será fácil lembrar-se de como fazê-las após algum tempo.</li>
+                            <li>Será seguro de operar na variedade de contextos em que será usado.</li>
+                            <li>Terá alto grau de utilidade, no sentido de que fará as coisas que as pessoas querem que sejam feitas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Princípios pioneiros de usabilidade</h3>
+                    <div>
+                        <dl>
+                            <dt>Focar desde o início os usuários e as tarefas</dt>
+                            <dd>Os designers devem primeiro entender quem serão os usuários, em parte, estudando a natureza do trabalho que se espera realizar, e, em parte, fazendo com que os usuários participem da equipe de design, por meio do design participativo ou como consultores.</dd>
+
+                            <dt>Medição empírica</dt>
+                            <dd>Logo no início do processo de desenvolvimento, as reações dos futuros usuários aos cenários impressos e manuais de usuários devem ser observadas e medidas. Mais tarde, eles podem inclusive usar simulações e protótipos para realizar trabalho de fato, e seu desempenho e reações devem ser observados, registrados e analisados.</dd>
+
+                            <dt>Design interativo</dt>
+                            <dd>Quando problemas são encontrados no teste de usuário, como de fato o serão, devem ser resolvidos. Isso significa que o design deve ser iterativo: deve haver um ciclo de design, teste/medição e redesign, repetido quantas vezes forem necessárias. Medições empíricas e design iterativo são necessários porque os designers, por melhores que sejam, não conseguem acertar nas primeiras tentativas.</dd>
+
+                            <dt>Usabilidade integrada</dt>
+                            <dd>Como resultado de suas experiências nesse projeto, eles acrescentaram um quarto princípio, a usabilidade integrada: “todos os fatores de usabilidade devem evoluir juntos e a responsabilidade por todos os aspectos de usabilidade deve estar sob um único controle</dd>
+                        </dl>
+
+                        <div class="accordion apol">
+                            <h3 class="apol">Caiu na APOL</h3>
+                            <div>
+                                <dl>
+                                    <dt> os Princípios pioneiros de Usabilidade:</dt>
+                                    <dd>
+                                        <li>Focar desde o início os usuários e as tarefas.</li>
+                                        <li>Medição empírica.</li>
+                                        <li>Design iterativo. </li>
+                                        <li>Usabilidade integrada.</li>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Usabilidade e PACT</h3>
+                    <div>
+                        <p>Uma maneira de olhar a usabilidade é vê-la como preocupada em atingir o equilíbrio entre os quatro principais fatores do design de sistemas interativos centrados no humano:</p>
+                        <ol>
+                            <li>Pessoas.</li>
+                            <li>Atividades que as pessoas querem realizar.</li>
+                            <li>Contextos nos quais a interação acontece.</li>
+                            <li>Tecnologias (hardware e software).</li>
+                        </ol>
+                        <p>As combinações desses elementos são muito diferentes, por exemplo, em um quiosque público, em um sistema de agenda compartilhada, em uma cabine de avião ou em um telefone celular; e é essa ampla variedade que faz com que seja tão difícil atingir o equilíbrio. Os designers devem constantemente avaliar diferentes combinações a fim de atingir esse equilíbrio.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Uma característica importante da IHC</h3>
+                    <div>
+                        <p>Há dois relacionamentos que precisam ser otimizados: de um lado, existe a interação entre as pessoas e as tecnologias que elas estão usando (esse aspecto se concentra na interface de usuário)</p>
+                        <p>A outra relação é entre as pessoas e as tecnologias consideradas como um todo (o sistema pessoas-tecnologia), as atividades que estão sendo realizadas e os contextos dessas atividades.</p>
+                        <div class="util-meio">
+                            <p>Pessoas<span class="ui-icon ui-icon-arrowthick-1-e"></span>Tecnologias em uso</p>
+                            <p>Pessoas<span class="ui-icon ui-icon-arrowthick-1-e"></span>Novas Tecnologias em geral</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Tecnologia que atrapalha</h3>
+                    <div>
+                        <p>Uma questão fundamental para a usabilidade é que frequentemente a tecnologia atrapalha as pessoas e o que elas querem fazer.</p>
+                        <p>Se compararmos o uso de um dispositivo interativo, como um controle remoto, ao uso de um martelo ou a dirigir um carro, veremos o assunto com mais clareza.</p>
+                        <p>Muitas vezes, quando estamos usando um sistema interativo, estamos conscientes da tecnologia, pois temos de parar para apertar os botões e temos consciência de estarmos cruzando os abismos.</p>
+                        <p>Quando estamos martelando ou dirigindo, concentramo-nos na atividade em si, e não na tecnologia.</p>
+                        <p><em>A tecnologia é algo “presente ao alcance”.</em></p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Pane tecnológica</h3>
+                    <div>
+                        <p>Quando martelamos, dirigimos ou escrevemos com uma caneta, geralmente nos concentramos na atividade em si: estamos martelando, dirigindo ou escrevendo.</p>
+                        <p>Só tomamos consciência dessas tecnologias quando algo acontece e interfere em sua operação harmoniosa.</p>
+                        <p>Se você atingir o próprio dedo enquanto estiver martelando, se tiver de jogar o carro para desviar de um buraco na pista, ou se a caneta parar de funcionar, o uso inconsciente da tecnologia se transformará em interação consciente com ela.</p>
+                        <p>Winograd e Flores (1986) chamam isso de breakdown (pane).</p>
+                        <p>Um dos objetivos do design de sistemas interativos é evitar esses breakdowns, proporcionando às pessoas meios de realizar as atividades sem, de fato, estarem conscientes das tecnologias que permitem que elas façam o que estão fazendo.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Usabilidade e modelos mentais</h3>
+                    <div>
+                        <p>Outro aspecto importante da usabilidade é tentar produzir um modelo mental acurado do sistema. Um bom design adotará um design conceitual claro e bem estruturado, que possa ser facilmente comunicado às pessoas.</p>
+                        <p>Um design complexo tornará esse processo muito mais difícil. Buscar um modelo conceitual claro, simples e consistente aumentará a usabilidade do sistema.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topico">
+                <span class="ui-icon ui-icon-note"></span>
+                <h2>Aceitabilidade</h2>
+            </div>
+            <div class="conteudo">
+                <div class="accordion">
+                    <h3>Introdução</h3>
+                    <div>
+                        <p>A aceitabilidade trata de encaixar as tecnologias na vida das pessoas. Por exemplo, alguns trens têm vagões “silenciosos”, nos quais não se aceita o uso de celulares, e os cinemas lembram às pessoas que devem desligar os telefones antes que o filme comece.</p>
+                        <p>O iMac, da Apple®, foi o primeiro computador feito para ficar bonito em uma sala de estar.</p>
+                        <p><strong>Uma diferença essencial entre usabilidade e aceitabilidade</strong> é que esta só pode ser entendida no contexto de uso. A usabilidade pode ser avaliada em laboratório (embora essas avaliações sejam sempre limitadas). A aceitabilidade, não.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Modelos de aceitação de tecnologia</h3>
+                    <div>
+                        <p>O Modelo de Aceitação de Tecnologia (TAM, do inglês Technology Acceptance Model) é uma maneira de avaliar as tecnologias e se elas serão aceitas pelas comunidades.</p>
+                        <p>Ele teve sua origem em estudos empresariais e não em computação ou psicologia.</p>
+                        <p>O TAM avalia a aceitação de tecnologias a partir de duas perspectivas: <strong>facilidade de uso</strong> e <strong>eficácia</strong>.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Aceitabilidade política</h3>
+                    <div>
+                        <p>Em muitas organizações, novas tecnologias foram introduzidas por motivos simplesmente econômicos, sem considerar como as pessoas poderiam se sentir a respeito e como os empregos e a vida das pessoas poderiam mudar.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Conveniência</h3>
+                    <div>
+                        <p>Designs desajeitados ou que forçam as pessoas a fazerem coisas podem se revelar inaceitáveis.</p>
+                        <p>Um design deve se encaixar sem esforço na situação.</p>
+                        <p>Hoje em dia, muita gente envia documentos eletronicamente, mas há um grande número de pessoas que não aceitam a leitura de documentos on-line. Elas imprimem os documentos porque assim eles são mais convenientes de carregar e ler.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Hábitos culturais e sociais</h3>
+                    <div>
+                        <p>Se a aceitabilidade política se preocupa com as estruturas e os princípios do poder, os hábitos sociais e culturais preocupam-se com a maneira como as pessoas gostam de viver.</p>
+                        <p>O e-mail spam tornou-se um aspecto da vida tão inaceitável que algumas empresas desistiram dos e-mails como um todo.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Utilidade</h3>
+                    <div>
+                        <p>Isto vai além das noções de eficiência e eficácia e refere-se à utilidade no contexto.</p>
+                        <p>Por exemplo, muitas pessoas consideram a função “Agenda” de seu PDA perfeitamente usável, mas não suficientemente útil no contexto do dia a dia.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Aceitabilidade econômica</h3>
+                    <div>
+                        <p>Há muitas questões econômicas que tornam uma tecnologia aceitável ou não. O preço é a mais óbvia delas, bem como a relação custo-benefício, mas as questões econômicas vão além à medida que a introdução de novas tecnologias pode mudar completamente a maneira como as empresas funcionam e como ganham dinheiro.</p>
+                        <p>Um novo “modelo de negócios” frequentemente faz parte da aceitabilidade econômica. Don Norman caracteriza a situação para uma tecnologia bem-sucedida como um banco com três pernas: experiência do usuário, marketing e tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topico">
+                <span class="ui-icon ui-icon-note"></span>
+                <h2>Princípios do Design</h2>
+            </div>
+            <div class="conteudo">
+                <div class="accordion">
+                    <h3>Introdução</h3>
+                    <div>
+                        <p>No decorrer dos anos foram desenvolvidos muitos princípios para o bom design de sistemas interativos.</p>
+                        <p>Há também bons princípios de design derivados da psicologia, como “minimizar a carga de memória” (ou seja, não espere que as pessoas se lembrem de muita coisa).</p>
+                        <p>A aplicação dos princípios de design levou a diretrizes de design e padrões de interação estabelecidos em determinadas circunstâncias, como o comando “Desfazer” na aplicação Windows, o botão ‘Voltar’ em um site ou o acinzentado das opções desativadas nos menus.</p>
+                        <p>Os princípios podem orientar o designer durante o processo de design e podem ser utilizados para avaliar e criticar ideias de protótipos.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Nossos princípios de design</h3>
+                    <div>
+                        <p>A seguir mostramos nossa lista de princípios de design de alto nível, montada a partir de Norman, Nielsen e outros. Todos os princípios interagem de maneiras complexas, afetando, às vezes em conflito e às vezes aprimorando uns aos outros. Mas eles ajudam a orientar o designer quanto às características-chave do bom design e a sensibilizar o designer quanto a questões importantes.</p>
+                        <p>Para facilitar a memorização e o uso, eles foram agrupados em três categorias principais – capacidade de aprendizagem, efetividade e adaptabilidade – mas que não são grupos rígidos. Os sistemas devem ser fáceis de aprender, eficazes e adaptáveis.</p>
+
+                        <div class="accordion">
+                            <h3>1 - Consistência</h3>
+                            <div>
+                                <p>Seja consistente no uso das características de design e com sistemas semelhantes e métodos-padrão de trabalho.</p>
+                                <p>Um design será consistente com respeito a algumas coisas, mas poderá ser inconsistente com relação a outras.</p>
+                                <p>Também há ocasiões em que ser inconsistente é bom porque chama a atenção das pessoas para algo que é importante.</p>
+                                <p>A diferença entre consistência conceitual e consistência física é importante.</p>
+                                <dl>
+                                    <dt>Consistência conceitual</dt>
+                                    <dd>Trata de garantir que o mapeamento seja consistente e de que o modelo conceitual permanecerá claro.</dd>
+
+                                    <dt>Consistência física</dt>
+                                    <dd>Trata de garantir comportamentos consistentes e uso consistente de cores, nomes, layouts e assim por diante.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>2 - Visibilidade</h3>
+                            <div>
+                                <p>Procure garantir que as coisas sejam visíveis, de forma que as pessoas possam ver quais funções estão disponíveis e o que o sistema está fazendo atualmente.</p>
+                                <p>Esta é uma parte importante do princípio psicológico segundo o qual é mais fácil reconhecer coisas do que ter de lembrar delas.</p>
+                                <p>Se não for possível tornar visível, torne observável.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>3 - Familiaridade</h3>
+                            <div>
+                                <p>Use linguagem e símbolos com os quais os futuros usuários estão familiarizados.</p>
+                                <p>Onde isso não for possível porque os conceitos são muito diferentes dos que as pessoas conhecem, forneça uma metáfora que os ajudará a transferir conhecimentos similares e correlatos de um domínio mais familiar.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>4 - Affordance</h3>
+                            <div>
+                                <p>Crie o design das coisas de forma que fique claro para o quê elas servem. Por exemplo, fazer com que botões se pareçam botões para que as pessoas os apertem.</p>
+                                <p>Affordance (do inglês afford, propiciar) refere-se às propriedades que as coisas têm (ou que se interpreta que elas tenham) e como elas se relacionam com a forma como as coisas poderiam ser usadas.</p>
+                                <p><strong>Affordances são determinadas culturalmente.</strong></p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>5 - Navegação</h3>
+                            <div>
+                                <p>Proporcione suporte para que as pessoas possam se movimentar pelo sistema: mapas e sinais orientadores e de informação.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>6 - Controle</h3>
+                            <div>
+                                <p>Deixe claro quem ou o que está no controle e permita que as pessoas possam também assumi-lo. O controle é aprimorado se houver um mapeamento claro entre os controles e o efeito que eles têm.</p>
+                                <p>Também deixe clara a relação entre o que o sistema faz e o que acontecerá no mundo fora do sistema.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>7 - Retorno (feedback)</h3>
+                            <div>
+                                <p>Retorne rapidamente a informação do sistema para as pessoas, para que elas saibam que efeito suas ações causaram.</p>
+                                <p>O retorno constante e consistente intensificará a sensação de controle.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>8 - Recuperação</h3>
+                            <div>
+                                <p>Torne possível recuperar-se de forma rápida e eficaz de ações, particularmente de enganos e erros.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>9 - Restrições</h3>
+                            <div>
+                                <p>Proporcione restrições de forma que as pessoas não tentem fazer coisas inadequadas.</p>
+                                <p>Em especial, as pessoas devem ser impedidas de realizar erros graves, por meio de restrições apropriadas às ações permitidas e da necessidade de confirmação para operações perigosas.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>10 - Flexibilidade</h3>
+                            <div>
+                                <p>Proporcione múltiplas maneiras de fazer as coisas de forma a atender pessoas com diferentes graus de experiência e interesse pelo sistema.</p>
+                                <p>Dê às pessoas a oportunidade de mudar a aparência e a forma como as coisas se comportam de forma que elas possam personalizar o sistema.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>11 - Estilo</h3>
+                            <div>
+                                <p>Designs devem ser elegantes e atraentes.</p>
+                            </div>
+                        </div>
+                        <div class="accordion util-margin-bottom">
+                            <h3>12 - Sociabilidade</h3>
+                            <div>
+                                <p>Sistemas interativos devem ser bem-educados, amistosos e agradáveis.</p>
+                                <p>Nada estraga tanto a experiência de usar um sistema interativo quanto uma mensagem agressiva ou uma interrupção abrupta.</p>
+                                <p>A sociabilidade também sugere a participação e o uso de tecnologias interativas para conectar pessoas e lhes dar apoio.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion apol">
+                            <h3 class="apol">Caiu na APOL</h3>
+                            <div>
+                                <dl>
+                                    <dt>Os Princípios do Design:</dt>
+                                    <dd>
+                                        <li>Capacidade de aprendizagem.</li>
+                                        <li>Efetividade.</li>
+                                        <li>Adaptabilidade.</li>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Trabalhando com pessoas</h3>
+                    <div>
+                        <p>Frequentemente, no design de aplicações com janelas, o designer pode conversar com os futuros stakeholders do sistema para descobrir o que eles querem e como se referem às coisas.</p>
+                        <p>Isso ajuda o designer a garantir que uma linguagem familiar será usada e que o design seguirá quaisquer convenções organizacionais que possam haver.</p>
+                        <p>As técnicas de design participativo podem ser usadas e os stakeholders podem participar do processo de design por meio de workshops, reuniões e avaliação das ideias de design.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Affordances</h3>
+                    <div>
+                        <p>São fornecidas acompanhando-se as diretrizes de design com janelas.</p>
+                        <p>As pessoas esperam ver um menu no alto da página e esperam que os itens do menu sejam exibidos quando se clica no cabeçalho.</p>
+                        <p>Itens que não estão acinzentados propiciarão a seleção.</p>
+                        <p>Os vários “widgets”, como caixas de verificação, botões de rádio e caixas de entrada de texto, devem propiciar a seleção porque as pessoas familiarizadas com o padrão saberão o que esperar.</p>
+                        <p>No entanto, é preciso tomar cuidado para garantir que as oportunidades sejam fácil e corretamente percebidas.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Estilo e sociabilidade</h3>
+                    <div>
+                        <p>Em termos de estilo e sociabilidade, as aplicações com janelas são um tanto limitadas, já que têm de se manter dentro das diretrizes-padrão de design.</p>
+                        <p>As mensagens de erro são uma área na qual o designer pode adotar um design mais sociável, avaliando bem as palavras usadas nas mensagens. No entanto, com demasiada frequência as mensagens aparecem abruptamente e interrompem as pessoas sem necessidade.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Usabilidade no design de sites</h3>
+                    <div>
+                        <p>A navegação é uma questão central no design de sites. Mesmo que um site seja bem direcionado, ele logo ficará grande e as questões sobre como se movimentar nele tornam-se importantes.</p>
+                        <p>Os designers devem fornecer suporte que permita às pessoas descobrir a estrutura e o conteúdo, bem como o caminho para determinada parte do site.</p>
+                        <p>A arquitetura da informação é uma área de estudo consagrada, dedicada ao design de sites.</p>
+                        <p>Uma característica-chave da consistência é o uso de recursos-padrão da internet, como o sublinhado azul para indicar um link.</p>
+                        <p>Questões de recuperação, retorno e controle têm maior importância nos sites de compras.</p>
+                        <p>Ao contrário das aplicações com janelas, os sites podem conectar facilmente as pessoas umas às outras.</p>
+                        <p>Estilo também é fundamental para os sites e oferece o máximo de oportunidades para que os designers demonstrem suas veias criativas.</p>
+                        <p>O uso de animação, vídeo e outros recursos de design realmente pode criar toda uma sensação de envolvimento com o site.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="controlador" id="close"><span class="ui-icon ui-icon-folder-collapsed"></button>
+        <button class="controlador" id="open"><span class="ui-icon ui-icon-folder-open"></button>
+    </main>
+
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/js.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>

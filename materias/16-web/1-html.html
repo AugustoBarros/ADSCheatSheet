@@ -1,0 +1,192 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Ferramentas de desenvolvimento WEB</a>
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li><a href="1-html.html">1 - HTML</a></li>
+                    <li><a href="2-css.html">2 - CSS</a></li>
+                    <li><a href="3-html5.html">3 - HTML 5</a></li>
+                    <li><a href="4-jquery.html">4 - jQuery</a></li>
+                    <li><a href="5-php.html">5 - PHP</a></li>
+                    <li><a href="#">6 - Ferramentas</a></li>
+                    <li><a href="apol.html">APOL's</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="topico">
+            <h1>Estrutura Básica</h1>
+            <div class="conteudo">
+                <p>Para criarmos uma página web, precisamos conhecer a linguagem de marcação HTML (HyperText Markup Language), é por meio dela que todas as páginas web são construídas.</p>
+                <p>HTML é a linguagem utilizada na criação de páginas da web. Ela permite que um simples texto apareça de várias maneiras: organizado por listas, com links de outras páginas, contendo algumas imagens, animações, etc.</p>
+
+                <div class="sub-conteudo">
+                    <h2>Tags</h2>
+                    <p>Elas definem onde um comando começa e termina.</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <ul>
+                        <li><strong>&lsaquo;html&rsaquo;</strong>: Todos os comandos HTML vão dentro desta tag.</li>
+                        <li><strong>&lsaquo;head&rsaquo;</strong>: Os conteúdos “não visíveis” da página são inseridos entre essas tags. Essa sessão do código é utilizada para ligar outros arquivos ao HTML, como folha de estilo (CSS) e arquivos javascript (.js).</li>
+                        <li><strong>&lsaquo;body&rsaquo;</strong>: Todo o conteúdo que irá aparecer na página deverá estar entre essas tags. Essa tag não mostra nada na tela, mas mantém a organização da página.</li>
+                        <li><strong>&lsaquo;h1&rsaquo;</strong> até <strong>&lsaquo;h6&rsaquo;</strong>: Títulos das páginas HTML são inseridos nas headings tags e indicam que o conteúdo contido nelas é mais importante, enquanto que os números menores indicam que o conteúdo não possui um grau de importância tão grande.</li>
+                        <li><strong>Atributo HTML</strong>: Permite a adição de propriedades ou informações dentro das tags.</li>
+                    </ul>
+                    <p>A maioria das tags possuem uma tag de abertura e uma tag de fechamento. Outras abrem e fecham na mesma tag e são chamadas de “self closing tags”.</p>
+
+                    <div class="apol">
+                        <h3>Caiu na Apol</h3>
+                        <dl>
+                            <dt>Como são chamadas as tags que não possuem tag de fechamento?</dt>
+                            <dd>Self closing tags</dd>
+
+                            <dt>Qual é a função da tag <strong>&lsaquo;body&rsaquo;</strong>?</dt>
+                            <dd>Organizar o conteúdo da página que será mostrado na tela</dd>
+
+                            <dt>Qual é a tag que contém o conteúdo mais importante da página, como o título da página ou o nome da empresa?</dt>
+                            <dd><strong>&lsaquo;h1&rsaquo;</strong></dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Browser</h2>
+                    <small>Conhecido como navegador</small>
+
+                    <p>Browser é um programa de computador que habilita seus usuários a interagirem com os documentos virtuais da Internet (páginas da web). Os browsers basicamente são os leitores de HTML. Eles interpretam as tags HTML e mostram na tela o resultado da formatação.</p>
+                </div>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>HTML é uma linguagem de:</dt>
+                        <dd>Marcação</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Elementos de Texto</h1>
+            <div class="conteudo">
+                <p>Para alocar textos dentro do documento HTML, existem as tags de título, parágrafo, listas e atributos.</p>
+                <p class="no-margin-bottom">De uma forma geral, são utilizadas as seguintes tags:</p>
+                <dl>
+                    <dt>Listas</dt>
+                    <dd>
+                        <li>Existem 2 tipos de listas: as ordenadas e as não ordenadas. Independentemente do tipo da lista, cada item é contido pela tag &lsaquo;li&rsaquo;.</li>
+                        <li>A tag <strong>&lsaquo;ul&rsaquo;</strong>: Utilizada para criar listas não ordenadas.</li>
+                        <li>A tag <strong>&lsaquo;ol&rsaquo;</strong>: Utilizada para criar listas ordenadas.</li>
+                    </dd>
+
+                    <dt>Links</dt>
+                    <dd>
+                        <li>Tag <strong>&lsaquo;a&rsaquo;</strong>: utilizada para criar links no documento HTML. Tudo entre as tags <a> e </a> será parte do link.</li>
+                        <li>Atributo <strong>href</strong>: Define para qual página o link irá apontar quando for clicado.</li>
+                        <li>
+                            Atributo <strong>target</strong>: Define onde o link irá abrir quando clicado:
+                            <ul>
+                                <li><strong>_blank</strong>: Diz ao navegador que o link será aberto em uma nova guia/janela.</li>
+                                <li><strong>_self</strong>: Diz ao navegador que o link será aberto na guia/janela atual.</li>
+                            </ul>
+                        </li>
+                    </dd>
+
+                    <dt>Container</dt>
+                    <dd>A tag <strong>&lsaquo;div&rsaquo;</strong>: É utilizada para criar um container dentro do documento HTML, agrupando os conteúdos da página.</dd>
+
+                    <dt>Paragráfo</dt>
+                    <dd>Utilizada para criação de parágrafos dentro do documento, para que o texto não fique "solto" dentro da página</dd>
+
+                    <dt>Imagens</dt>
+                    <dd>A tag <strong>&lsaquo;img&rsaquo;</strong>:
+                        <li> É utilizada para inserir imagens na página web.</li>
+                        <li>Essa tag é “self closing”, ou seja, ela abre e fecha sozinha, sem a necessidade de uma tag de fechamento.</li>
+                        <li>O atributo <strong>src</strong> indicará o caminho da imagem para ser inserida dentro da página web.</li>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Tabelas</h1>
+            <div class="conteudo">
+                <p>Por meio delas podemos construir formulários, informativos para o usuário e até mesmo páginas inteiras.</p>
+
+                <dl>
+                    <dt>A tag <strong>&lsaquo;table&rsaquo;</strong> é utilizada para criar tabelas na página web. Essa tag sempre será acompanhada de outras 5 tags.</dt>
+                    <dd>
+                        <li><strong>&lsaquo;thead&rsaquo;</strong>: Cria o cabeçalho da tabela, se esta tiver um cabeçalho.</li>
+                        <li><strong>&lsaquo;tbody&rsaquo;</strong>: Cria o corpo da tabela, quando a tag <thead> for utilizada.</li>
+                        <li><strong>&lsaquo;tr&rsaquo;</strong>: Define as linhas da tabela.</li>
+                        <li><strong>&lsaquo;td&rsaquo;</strong>: Define as colunas da tabela.</li>
+                        <li><strong>&lsaquo;th&rsaquo;</strong>: Define as colunas do cabeçalho da tabela (apenas utilizada dentro do <strong>&lsaquo;thead&rsaquo;</strong>).</li>
+                    </dd>
+                </dl>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>A tag <strong>&lsaquo;table&rsaquo;</strong> sempre será acompanhada das seguintes outras 5 tags:</dt>
+                        <dd><strong>&lsaquo;thead&rsaquo;</strong>, <strong>&lsaquo;tbody&rsaquo;</strong>, <strong>&lsaquo;tr&rsaquo;</strong>, <strong>&lsaquo;td&rsaquo;</strong>, <strong>&lsaquo;th&rsaquo;</strong></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Formulários</h1>
+            <div class="conteudo">
+                <p>A tag <strong>&lsaquo;form&rsaquo;</strong> é usada para criar formulários de preenchimento no documento HTML.</p>
+                <dl>
+                    <dt><strong>&lsaquo;input&rsaquo;</strong></dt>
+                    <dd>
+                        Cria campos de preenchimento. O atributo <strong>type</strong> define o tipo de campo a ser estruturado e possui os seguintes valores:
+                        <li><strong>text</strong>: Para inputs de texto normal.</li>
+                        <li><strong>radio</strong>: Define um rádio button (botão de escolha alternativa).</li>
+                        <li><strong>submit</strong>: Define um botão de envio.</li>
+                    </dd>
+
+                    <dt>Além disso, temos os seguintes elementos envolvidos na estruturação de formulários:</dt>
+                    <dd>
+                        <li>A tag <strong>&lsaquo;br&rsaquo;</strong>que é utilizada para quebrar as linhas.</li>
+                        <li>O atributo <strong>name</strong> da tag <strong>&lsaquo;input&rsaquo;</strong> que define o nome de cada campo que será enviado o formulário, para que cada dado seja enviado e armazenado corretamente.</li>
+                        <li>O atributo <strong>action</strong> da tag <strong>&lsaquo;form&rsaquo;</strong> que define para onde os dados do formulário serão enviados. É comum enviar os dados para um servidor (normalmente o formulário é enviado para uma página web em um servidorweb).</li>
+                    </dd>
+
+                    <dt>Métodos de envio do formulário</dt>
+                    <dd>
+                        <li><strong>GET</strong>: O GET é o método padrão, em que os dados são enviados através da URL do browser; é utilizado quando nenhuma informação sigilosa está sendo enviada. É usado por muitos motores de busca, como quando você realiza uma pesquisa no Google, por exemplo.</li>
+                        <li><strong>POST</strong>: O POST é um método que oferece maior segurança, pois transfere os dados pelo servidor, não sendo visíveis na URL, como no método GET.</li>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Herança</h1>
+            <div class="conteudo">
+                <p>Esse conceito de herança, chamado de "Nest", pode ser observado de forma simples na composição de listas - uma <strong>&lsaquo;ol&rsaquo;</strong> ou uma <strong>&lsaquo;ul&rsaquo;</strong> contém várias <strong>&lsaquo;li&rsaquo;</strong>, que são os elementos filhos da tag pai.</p>
+                <p>As tags HTML não precisam conter textos, necessariamente, elas podem conter outras tags. Uma tag que contém outra tag é chamada de pai ou parente, já a tag contida dentro de uma tag parent é chamada de filha ou children.</p>
+            </div>
+        </div>
+    </main>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>

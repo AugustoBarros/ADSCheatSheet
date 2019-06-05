@@ -1,0 +1,242 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PHP</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Ferramentas de desenvolvimento WEB</a>
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li><a href="1-html.html">1 - HTML</a></li>
+                    <li><a href="2-css.html">2 - CSS</a></li>
+                    <li><a href="3-html5.html">3 - HTML 5</a></li>
+                    <li><a href="4-jquery.html">4 - jQuery</a></li>
+                    <li><a href="5-php.html">5 - PHP</a></li>
+                    <li><a href="#">6 - Ferramentas</a></li>
+                    <li><a href="apol.html">APOL's</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="topico">
+            <h1>PHP</h1>
+            <div class="conteudo">
+                <p>O PHP (acrônimo recursivo para "Hypertext Preprocessor" ou pré-processador de hipertexto, originalmente Personal Home Page) é uma linguagem dinâmica e flexível, que suporta uma variedade de técnicas de programação e utilizada em escala mundial no desenvolvimento web.</p>
+                <p>Possui um conjunto completo de funcionalidades de programação orientada a objetos, incluindo suporte às classes, interfaces, heranças, construtores, clonagem, exceções e muito mais.</p>
+                <p>Concorrente direta da ASP (desenvolvida pela Microsoft), o PHP é uma linguagem open source que possui grande facilidade na mesclagem com HTML e JavaScript, tornando mais fácil e rápida a geração de páginas e conteúdos dinâmicos.</p>
+                <p>É uma linguagem case sensitive, ou seja, faz diferenciação entre letras maiúsculas e minúsculas na declaração de métodos, funções e variáveis.</p>
+                <p>Além da geração de páginas e conteúdos dinâmicos, o PHP também é utilizado na ligação com bancos de dados, pela facilidade e comodidade.</p>
+                <p>Para seus scripts rodarem em ambiente de desenvolvimento local (na sua máquina, com arquivos no seu disco) é necessário a instalação de um servidor.</p>
+
+                <div class="sub-conteudo">
+                    <h2>Sintaxe Básica</h2>
+                    <p>O código PHP poderá ficar embutido dentro da página HTML ou em um arquivo externo (.php). O compilador e o navegador irão interpretar o código devido a presença dos delimitadores <strong>&lsaquo;?php ?&rsaquo;</strong></p>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Variáveis</h2>
+                    <p>Assim como toda linguagem de programação, o PHP também possui suas variáveis. A declaração de variáveis segue o seguinte padrão:</p>
+                    <p><strong>$nome da variável = “dado”;</strong></p>
+                    <figure>
+                        <img src="img/var.jpg" alt="Variável em PHP" />
+                        <figcaption>Variável em PHP</figcaption>
+                    </figure>
+                    <p>As variáveis podera conter:</p>
+                    <figure>
+                        <img src="img/int.jpg" alt="integer ou long em PHP" />
+                        <figcaption><strong>integer</strong> ou <strong>long</strong> em PHP</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/float.jpg" alt="float ou double em PHP" />
+                        <figcaption><strong>float</strong> ou <strong>double</strong> em PHP</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/string.jpg" alt="String em PHP" />
+                        <figcaption><strong>String</strong> em PHP</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/array.jpg" alt="array em PHP" />
+                        <figcaption><strong>array</strong> em PHP</figcaption>
+                    </figure>
+                </div>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Quais são as principais utilizações do PHP?</dt>
+                        <dd>Criação de páginas web dinâmicas e ligação com banco de dados.</dd>
+
+                        <dt>Qual o significado do acrônimo "PHP"?</dt>
+                        <dd>Hypertext Preprocessor.</dd>
+
+                        <dt>Para executar uma aplicação PHP em um ambiente local é necessário:</dt>
+                        <dd>Instalar no computador um servidor, pois o browser sozinho não consegue interpretar scripts PHP.</dd>
+
+                        <dt>Qual a TAG para indicar a existência ao navegador?</dt>
+                        <dd><strong>&lsaquo;?php ?&rsaquo;</strong></dd>
+
+                        <dt>O que quer dizer com "PHP é case sensitive"?</dt>
+                        <dd>Fazer diferenciação entre caracteres maiúsculos/minúculos</dd>
+                    </dl>
+            </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Funções</h1>
+            <div class="conteudo">
+                <p>Qualquer código PHP válido pode estar contido em funções. Como a checagem de tipos é dinâmica, o tipo de retorno não deve ser declarado, sendo necessário estar atento para que a função retorne o tipo desejado. Observe:</p>
+                <figure>
+                    <img src="img/function.jpg" alt="Exemplo de função em PHP">
+                    <figcaption>Exemplo de função em PHP</figcaption>
+                </figure>
+
+                <p>As funções echo e print realizam impressões na tela</p>
+
+                <p class="no-margin-bottom">Existem duas maneiras de fazer com que a função tenha parâmetros passados por referência:</p>
+                <ul class="no-margin-bottom">
+                    <li>Indicando isso na declaração da função, fazendo com que a passagem de parâmetros seja sempre assim.</li>
+                    <li>Na própria chamada da função.</li>
+                </ul>
+                <p class="no-margin-top">Nos dois casos se utiliza o modificador "&".</p>
+
+                <p>Em PHP, é possível ter valores-padrão para argumentos de funções, que serão assumidos no caso de nada ser passado no lugar do argumento. Quando algum parâmetro é declarado dessa forma, a passagem dele na chamada da função torna-se opcional.</p>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Quais funções podem realizar impressões na tela?</dt>
+                        <dd>echo e print.</dd>
+
+                        <dt>Quais são as maneiras de definir parâmetros por referência em uma função?</dt>
+                        <dd>
+                            <li>Indicando na declaração da função.</li>
+                            <li>Na chamada da função.</li>
+                        </dd>
+
+                        <dt>Alguns datatypes aceitos:</dt>
+                        <dd>
+                            <li>Array.</li>
+                            <li>Double.</li>
+                            <li>Float.</li>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Formulários</h1>
+            <div class="conteudo">
+                <p>A linguagem PHP também é utilizada para o tratamento dos dados enviados através de um formulário em uma página HTML.</p>
+                <p>Por meio da definição da instrução HTML method="..." na tag <strong>&lsaquo;form&rsaquo;</strong>, definimos como os dados contidos no formulário serão enviados para o servidor, para que um script em PHP os receba, interprete e execute alguma função. Isso pode acontecer por meio de dois métodos: GET e POST. </p>
+
+                <p>Além da instrução method="...", na tag <strong>&lsaquo;form&rsaquo;</strong>, precisamos definir o atributo action="...", que irá definir qual script irá receber os dados do formulário.</p>
+                <p class="no-margin-bottom">Observe como isso acontece no método GET:</p>
+                <figure>
+                    <img src="img/form.jpg" alt="Exemplo de form em PHP" />
+                    <figcaption>Exemplo de form em PHP</figcaption>
+                </figure>
+
+                <div class="sub-conteudo">
+                    <h2>GET</h2>
+                    <p>Todas as informações transmitidas pelo form para o servidor são ativadas ao final da URL ativa. A maioria dos documentos HTML são recuperados a partir da requisição de uma única URL ao servidor.</p>
+                    <figure>
+                        <img src="img/get.jpg" alt="Exemplo de get em PHP" />
+                        <figcaption>Exemplo de get em PHP</figcaption>
+                    </figure>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>POST</h2>
+                    <p>Todas as informações transmitidas pelo form para o servidor são imediatamente enviadas após a URL, ou seja, quando o servidor recebe uma ativação de um formulário que está utilizando o método POST, ele reconhece que precisa continuar “ouvindo” para obter a informação.</p>
+                <figure>
+                    <img src="img/post.jpg" alt="Exemplo de post em PHP" />
+                    <figcaption>Exemplo de post em PHP</figcaption>
+                </figure>
+                </div>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Quais são os métodos utilizados para envio de informações?</dt>
+                        <dd>
+                            <li><strong>GET</strong>: passa as informações pela URL ativa.</li>
+                            <li><strong>POST</strong>: passa as informações pelo servidor.</li>
+                        </dd>
+
+                        <dt>A forma mais simples que permite a digitação de uma única palavra ou linha de texto é:</dt>
+                        <dd>text</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Banco de Dados</h1>
+            <div class="conteudo">
+                <p class="no-margin-bottom">Utilizando o MySQL, o trabalho com a linguagem SQL através de PHP se torna fácil. O comando responsável por efetuar a conexão com o servidor MySQL de banco de dados é:</p>
+                <figure>
+                    <img src="img/connect.jpg" alt="Conexão ao MySQL com PHP" />
+                    <figcaption>Conexão ao MySQL com PHP</figcaption>
+                </figure>
+
+                <dl>
+                    <dt><strong>string host</strong></dt>
+                    <dd>Indica o endereço do servidor MySQL.</dd>
+
+                    <dt><strong>[:porta]</strong></dt>
+                    <dd>Indica uma porta opcional na qual o servidor está operando.</dd>
+
+                    <dt><strong>string login</strong></dt>
+                    <dd>Indica o nome de usuário no qual será realizada a conexão.</dd>
+
+                    <dt><strong>string senha</strong></dt>
+                    <dd>Indica a senha do usuário que está se conectando ao servidor.</dd>
+                </dl>
+
+                <p>Por questão de comodidade, podemos armazenar essa string de conexão em uma variável, assim, sempre que precisarmos dela novamente, podemos apenas chamar o nome da variável e, em uma próxima chamada, apenas $nome irá realizar o mesmo comando!</p>
+                <p class="no-margin-bottom">Assim, se a conexão for bem-sucedida, ela ficará armazenada dentro da variável, e poderemos solicitá-la no momento que desejarmos.</p>
+                <figure>
+                    <img src="img/connection.jpg" alt="Exemplo de conexão ao MySQL com PHP" />
+                    <figcaption>Exemplo de conexão ao MySQL com PHP</figcaption>
+                </figure>
+
+                <p class="no-margin-bottom">Após a conexão com o servidor de banco, precisamos selecionar um banco de dados no qual iremos realizar as inserções e/ou mudanças nos registros. O comando irá nos retornar 0 ou 1, se tudo correr bem o retorno será 1, indicando o sucesso na operação. Após isso, qualquer query executada será válida para a base de dados selecionada.</p>
+                <figure>
+                    <img src="img/connection.jpg" alt="Exemplo de seleção a uma base de dados com PHP e MySQL" />
+                    <figcaption>O nome da base de dados (database) que será selecionado , seguido do identificador da conexão.</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Orientação a Objetos</h1>
+            <div class="conteudo">
+                <p>A linguagem PHP não foi criada com o objetivo de ser uma linguagem orientada a objetos, assim como o Java. Mas, a partir da versão 3 passou a suportar a função, já que vários desenvolvedores utilizavam a programação estruturada para simular essa funcionalidade. O primeiro conceito básico da orientação a objetos é a classe, onde são feitas abstrações do software de objetos similares (um template em que os objetos serão criados). Dentro da classe, são definidos os atributos e seus valores.</p>
+                <p>A visibilidade é outro conceito fundamental em orientação a objetos. A visibilidade de um método ou atributo pode ser definida fixando as palavras-chave public, private ou protected.</p>
+
+                <figure>
+                    <img src="img/class.jpg" alt="Exemplo class em PHP" />
+                    <figcaption>Exemplo class em PHP</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>

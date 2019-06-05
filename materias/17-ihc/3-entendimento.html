@@ -1,0 +1,397 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>3 - Entendimento</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Interação Humano Computador</a>
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li><a href="1-design-sistemas-interativos.html">1 - O design de SI</a></li>
+                    <li><a href="2-o-processo-do-design-de-sistemas-interativos-centrado-no-humano.html">2 - O processo do design de SI</a></li>
+                    <li><a href="3-entendimento.html">3 - Entendimento</a></li>
+                    <li><a href="4-design-para-a-experiencia.html">4 - Design para experiência</a></li>
+                    <li><a href="5-avaliacao.html">5 - Avaliação</a></li>
+                    <li><a href="6-acessibilidade.html">6 - Acessibilidade e Usabilidade</a></li>
+                    <li><a href="apol.html">APOL's</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="topico">
+            <h1>Entendimento</h1>
+            <div class="conteudo">
+                <p>o Design de Sistemas Interativos se preocupa com as pessoas, com as atividades que elas estão realizando, com o contexto dessas atividades e com as tecnologias que são usadas, esses são os elementos do PACT. Há uma variedade considerável em cada um desses itens, e essas diferentes combinações que tornam essa área do design tão fascinante.</p>
+                <p class="no-margin-bottom">Antes de iniciar a criação, é essencial adquirir um entendimento completo, por meio de alguns itens:</p>
+                <ul>
+                    <li><strong>Pessoas</strong> envolvidas com o produto</li>
+                    <li><strong>Atividades</strong> que serão desempenhadas</li>
+                    <li><strong>Contextos</strong> em que essas atividades acontecem</li>
+                    <li><strong>Tecnologias</strong> que serão usadas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>PACT</h1><small class="sub-titulo">Pessoas, Atividades, Contextos e Tecnologias</small>
+            <div class="conteudo">
+                <p>É um framework útil para pensar sobre uma situação de design, pois os designers precisam entender as pessoas que usarão seus sistemas e produtos, as atividades que elas querem realizar e os contextos nos quais essas atividades acontecem.</p>
+                <dl>
+                    <dt><strong>Pessoas</strong></dt>
+                    <dd>O designer deve pensar nas diferenças físicas, psicológicas e sociais e como elas mudam com o passar do tempo e em circunstâncias variadas.</dd>
+
+                    <dt><strong>Atividades</strong></dt>
+                    <dd>
+                        <li>É preciso pensar na complexidade da atividade (concentrada ou vaga, simples ou difícil, com poucas ou muitas etapas).</li>
+                        <li>Nas suas características temporais (frequência, altos e baixos, contínua ou interrompível).</li>
+                        <li>Nas características de cooperação e na natureza dos dados.</li>
+                    </dd>
+
+                    <dt><strong>Contextos</strong></dt>
+                    <dd>Devem ser considerados os cenários físico, social e organizacional.</dd>
+
+                    <dt><strong>Tecnologias</strong></dt>
+                    <dd>O designer deve considerar a entrada, a saída, a comunicação e o conteúdo.</dd>
+                </dl>
+
+                <div class="sub-conteudo">
+                    <h2>Atividades e tecnologias.</h2>
+                    <p>O ciclo tecnologia-atividade é também conhecido como ciclo tarefa-artefato.</p>
+                    <p>Há inúmeros exemplos de tecnologias que alteraram atividades. Pense nas mudanças no design dos telefones, que mudaram o modo como as pessoas realizam suas atividades.</p>
+                    <p>Existem tecnologias para dar suporte a uma ampla gama de pessoas que realizam várias atividades em diferentes contextos. Se a tecnologia mudar, então a natureza das atividades também mudará.</p>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Ergonomia e Design Ergonômico</h2>
+                    <p>O termo “ergonomia” foi criado em 1948 para descrever o estudo das relações entre as pessoas e seu ambiente. Ela é multidisciplinar, pois usa elementos da Anatomia, da Fisiologia, vários aspectos da Psicologia (fisiológica e experimental, por exemplo), da Física, da Engenharia, dos estudos laborais, entre outros.</p>
+                    <p>A Ergonomia pode identificar, em termos de números, o que é pequeno e usável e o que é pequeno demais para usar.</p>
+                    <small>No mundo da computação móvel, pequeno é bom, mas pequeno demais é ruim.</small>
+                    <div class="sub-conteudo">
+                        <h3>Lei de Fitts</h3>
+                        <p>O exemplo mais conhecido da Ciência Ergonômica aplicada à IHC é a Lei de Fitts, que Segundo Benyon (2011) estabelece uma fórmula a qual indica a relação entre o tempo necessário para se mover até determinado alvo como uma função da distância até o alvo e o tamanho dele. Para isso, usa-se a seguinte fórmula:</p>
+                        <ul>
+                            <li>T = k log<sup>2</sup> (D/S + 0,5)</li>
+                            <li><strong>k</strong> ~ 10ms</li>
+                            <li><strong>D</strong> é a distância entre posição atual e o alvo;</li>
+                            <li><strong>S</strong> é o tamnho do alvo.</li>
+                        </ul>
+                        <div class="sub-conteudo">
+                            <h4>Exemplo</h4>
+                            <p>Qual o tempo necessário para movimentar o cursor usando o mouse até um determinado botão de 2 cm de tamanho que está a uma distância 15 cm do ponto inicial?</p>
+                            <img src="../images/fitts.gif" class="esquerda-primeiro margin-bottom"/>
+                            <p class="esquerda-demais">
+                                Aplicando a fórmula, temos: <br />
+                                T = 100 log2 (15/2+0,5)<br />
+                                T= 0,207 segundos
+                            </p>
+                            <p class="limpa-esquerda">Espera-se um tempo de resposta em torno de 100 milissegundos para atividades de coordenação mão-olho (aquelas nas quais usamos os olhos para dirigir a atenção e as mãos para executar uma tarefa determinada).</p>
+                            <p>Para uma atividade com relação entre causa e efeito, como clicar um botão e acontecer alguma coisa, espera-se um segundo.</p>
+                            <p>Qualquer coisa que leve mais de cinco segundos deixará as pessoas frustradas e confusas.</p>
+                        </div>
+                    </div>
+
+                    <div class="apol">
+                        <h3>Caiu na Apol</h3>
+                        <dl>
+                            <dt>Sobre Ergonomia e Design Ergonômico é corretor afirmar:</dt>
+                            <dd>
+                                <li>Embora a ergonomia seja mais antiga que a IHC, seria um erro imaginar que é antiquada e fora de sintonia, pelo contrário.</li>
+                                <li>A ergonomia pode identificar, em termos de números, o que é pequeno e usável e o que é pequeno demais para usar.</li>
+                                <li>O exemplo mais conhecido da ciência ergonômica aplicada à IHC é a lei de Fitts.</li>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Diferenças psicológicas</h2>
+                    <p>Psicologicamente, as pessoas são diferentes de muitas maneiras. Por exemplo, indivíduos com boa percepção espacial têm muito mais facilidade para encontrar o caminho e se lembrar de um site do que aqueles nos quais essa percepção não é boa.</p>
+                    <p>Todos têm mais facilidade para reconhecer do que para recordar coisas.</p>
+
+                    <div class="apol">
+                        <h3>Caiu na Apol</h3>
+                        <dl>
+                            <dt>Sobre as diferenças psicológicas e o projeto de sistemas:</dt>
+                            <dd>Os designers devem projetar para os que têm má percepção espacial, fornecendo boa sinalização e instruções claras.</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Semelhanças entre as pessoas</h2>
+                    <p>O design para grupos homogêneos (aqueles que são, em linhas gerais, semelhantes e que querem fazer praticamente as mesmas coisas) é muito diferente do design para grupos heterogêneos.</p>
+
+                    <div class="apol">
+                        <h3>Caiu na Apol</h3>
+                        <dl>
+                            <dt>Sobre semelhança entre pessoas:</dt>
+                            <dd>Os site têm de prove para grupos heterogêneos e, consequentemente, preocupações específicas.</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Atividades</h2>
+                    <p>Há muitas características das atividades que os designers precisam considerar, já que o termo é usado tanto para as tarefas simples quanto para as altamente complexas e longas. Dessa forma, é preciso ter cuidado ao tratar desse assunto.</p>
+                    <img src="../images/atividades.png" />
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Aspectos temporais das atividades</h2>
+                    <p>Os aspectos temporais abordam o quanto as atividades são regulares ou esporádicas. Algo que é realizado todos os dias pode ter um design muito diferente de algo que só acontece uma vez por ano. Os designers devem garantir que as tarefas frequentes sejam fáceis de realizar, mas também precisam se certificar de que as tarefas esporádicas sejam fáceis de aprender (ou lembrar).</p>
+                    <p>Se as pessoas são interrompidas quando estão realizando alguma atividade, o design precisa garantir que elas “encontrarão seu lugar” novamente e prosseguirão. Portanto, é importante garantir que os usuários não cometam erros ou deixem passar etapas importantes de uma atividade.</p>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Tecnologias</h2>
+                    <p>São os meios com os quais os designers de sistemas interativos trabalham. Os sistemas interativos consistem tipicamente de componentes de hardware e software que se comunicam entre si e transformam dados de entrada em dados de saída.</p>
+                </div>
+
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Sobre PACT é correto afirmar que:</dt>
+                        <dd>É um framework útil para o design, pois os designers precisam entender os usuários dos sistemas e produtos, as atividades a realizar e os contextos de onde e como acontece.</dd>
+
+                        <dt>As principais características que o designer deve focar o objetivo da atividade</dt>
+                        <dd>
+                            <li>Aspectos temporais.</li>
+                            <li>Cooperação.</li>
+                            <li>Complexidade.</li>
+                            <li>Crítico quanto à segurança.</li>
+                            <li>A naturaza do conteúdo.</li>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Requisitos</h1>
+            <div class="conteudo">
+                <p>Segundo Robertson e Robertson (1999), requisito é “algo que o produto deve fazer ou uma qualidade que o produto deve ter”.</p>
+                <p>Os designers estudam as atividades atuais, reúnem histórias de uso e, em pouco tempo, geram uma grande quantidade de informações sobre a situação atual e sobre as metas e aspirações das pessoas. Por isso o processo de análise/design/avaliação é tão interativo. É importante saber que requisitos adicionais surgem à medida que o processo de design avança.</p>
+                <p class="no-margin-bottom">A seguir, você confere as atividades relacionadas aos requisitos:</p>
+                <dl>
+                    <dt><strong>Coleta de requisitos</strong></dt>
+                    <dd>Sugere que estes estão espalhados por aí, esperando para serem apanhados, com pouca interação entre designer e stakeholders.</dd>
+
+                    <dt><strong>Geração de requisitos</strong></dt>
+                    <dd>Sugere uma atividade mais criativa e que tende a minimizar as ligações com a prática existente.</dd>
+
+                    <dt><strong>Extração de requisitos</strong></dt>
+                    <dd>Sugere alguma interação entre stakeholders e designers.</dd>
+
+                    <dt><strong>Engenharia de requisitos</strong></dt>
+                    <dd>É frequentemente usada nos projetos de engenharia de software e tem, em geral, uma abordagem bastante formal.</dd>
+                </dl>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Quais as atividades relacionada aos requisitos?</dt>
+                        <dd>
+                            <li>Coleta de requisitos.</li>
+                            <li>Geração de requisitos.</li>
+                            <li>Extração de requisitos.</li>
+                            <li>Engenharia de requisitos.</li>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Especificação dos requisitos</h2>
+                    <p>Muitas vezes, os clientes exigem uma especificação (um documento formal) com os requisitos. Desenvolvedores também precisam de especificações claras de requisitos em algum ponto do seu processo para que possam elaborar o custo do projeto e administrá-lo com sucesso. </p>
+                    <p class="no-margin-bottom">Por convenção, os requisitos se dividem em dois tipos: funcional e não funcional.</p>
+                    <dl>
+                        <dt><strong>Requisitos Funcionais</strong></dt>
+                        <dd>São aqueles feitos pelo sistema.</dd>
+
+                        <dt><strong>Requisitos não funcionais</strong></dt>
+                        <dd>São uma qualidade que o sistema deve ter e se referem à maneira como a funcionalidade opera. Eles podem ser os fatores cruciais na aceitabilidade, venda ou uso de um produto.</dd>
+                    </dl>
+                    <p>Para ambos os tipos de requisitos, observe que não está especificado como a tecnologia o atenderá.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1 id="teste">Template dos requisitos</h1>
+            <div class="conteudo">
+                <p class="no-margin-bottom">O uso de um template para a especificação dos requisitos é útil, particularmente, em grandes projetos. A apresentação exata da informação não é importante, mas deve incluir para cada requisito pelo menos:</p>
+                <ul>
+                    <li>Um número de referência único que, de preferência, codifique se o requisito é funcional ou não.</li>
+                    <li>Um resumo em uma sentença.</li>
+                    <li>As fontes dos requisitos.</li>
+                    <li>Os argumentos para eles e outras informações relevantes.</li>
+                </ul>
+                <p>Os requisitos devem ser revisados com os clientes e modificados conforme necessário, de acordo com suas prioridades.</p>
+
+                <div class="sub-conteudo">
+                    <h2>Design participativo</h2>
+                    <p>O trabalho de pesquisa implica uso de técnicas para entender e analisar as necessidades de outra pessoa, suas metas e aspirações. O aspecto-chave que o designer deve lembrar é de não ser ele a pessoa a usar o sistema final, isso porque é preciso entender as necessidades alheias.</p>
+                    <p>Adaptar várias histórias semelhantes em cenários conceituais mais estruturados também ajudará no entendimento e na geração de requisitos.</p>
+
+                    <div class="apol">
+                        <h3>Caiu na Apol</h3>
+                        <dl>
+                            <dt>Qual o aspecto-chave que o designer deve considerar?</dt>
+                            <dd>O aspecto-chave que o designer deeve lembrar é de não ser ele a passoa que utilizará o sistema.</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Ser centrado no humano</h2>
+                    <p>Antes de tudo, é importante que as características e as atividades humanas sejam levadas em consideração. Além disso, sempre que possível, é correta a contribuição das pessoas ao usar as novas tecnologias.</p>
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Representação dos requisitos</h2>
+                    <p>Alan Newell e seus colegas (a exemplo, Newell, Carmichael, Gregor, Alm e Waller) desenvolveram métodos para representar os requisitos, a fim de torná-los mais compreensíveis ao grupo de pessoas para o qual está sendo feito o design – principalmente pessoas mais velhas:</p>
+                    <img src="../images/representacao-requisitos.png" />
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Estrevistas estruturadas</h2>
+                    <p>A entrevista estruturada usa perguntas elaboradas antecipadamente e segue um roteiro com exatidão. Pesquisas de opinião pública, do tipo produzido em grande número antes das eleições, são normalmente baseadas em entrevistas estruturadas.</p>
+                    <p>Entrevistas completamente não estruturadas são usadas às vezes quando é particularmente importante minimizar as preconcepções do designer ou quando pouca informação dos antecedentes está disponível. Como o termo sugere, não há perguntas elaboradas ou tópicos além do assunto geral do projeto em questão. Veja um exemplo a seguir:</p>
+                    <img src="../images/entrevista-estruturada.png" />
+                    <p>Exemplo de entrevista semiestruturada:</p>
+                    <img src="../images/entrevista-semiestruturada.png" />
+                </div>
+
+                <div class="sub-conteudo">
+                    <h2>Histórias, cenários e prototipação inicial em entrevistas</h2>
+                    <p>Cenários e histórias são recursos úteis para entender as atividades e ajudar a evitar que as pessoas imaginem (ou reconstruam) situações no abstrato.</p>
+                    <p>A história enfatiza o realismo dos sistemas existentes e a seriedade do tratamento quanto ao desempenho no ambiente. Isso, por sua vez, reforça a importância dos requisitos de realismo no ambiente virtual e a possibilidade de documentar as ações tomadas dentro dele.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Usando cenários</h1>
+            <div class="conteudo">
+                <p>Uma vez estabelecida a ideia geral do que a nova tecnologia pode fazer, a discussão do cenário destacará muitas questões, desde os nomes das funções individuais até o impacto das mudanças no ambiente de trabalho.</p>
+                <p>Com ou sem um protótipo, o analista e o cliente “percorrem” o cenário, enquanto o analista sai em busca de comentários, problemas, alternativas e sugestões em geral. Dependendo do resultado dessa análise abstrata do cenário/protótipo, modificações e novas interações são desejáveis.</p>
+                <p>Onde surgir uma grande escala de novas questões, pode ocorrer um erro de concepção subjacente ao cenário ou ao protótipo, que devem ser radicalmente repensados.</p>
+                <h2>Realização de questionários</h2>
+                <p>Em relação à realização de questionários para entender o perfil e a expectativas do público, algumas questões são importantes.</p>
+                <dl>
+                    <dt>O que são questionários?</dt>
+                    <dd>Os questionários são uma maneira de otimizar o entendimento do processo quando um grande número de pessoas deve ser entrevistado e não há recursos para individualizar o procedimento. Eles requerem design, prototipação e avaliação da mesma maneira que qualquer outra forma de design de interação, trata-se de uma tarefa que requer habilidade.</dd>
+
+                    <dt>Por que eles devem ter qualidade?</dt>
+                    <dd>Um bom questionário leva tempo para ser montado e precisa ser compreensível ou inequívoco para que possa colher dados que respondam as perguntas da avaliação, a fim de que sejam analisadas com facilidade.</dd>
+
+                    <dt>Como analisá-los?</dt>
+                    <dd>
+                        A análise dos dados requer reflexão e tempo. Se a maioria dos entrevistados atribuiu nota 5 (num máximo de 7) para a característica A em relação à utilidade; mas nota 6 (num máximo 7) à característica B, isso realmente significa que a característica B é melhor ou é suficiente que ambas as características tenham obtido notas acima do ponto médio? <br />
+                        Talvez a característica A tenha sido mal compreendida, isso porque sem uma pergunta complementar é difícil interpretar o dado.
+                    </dd>
+
+                    <dt>Quando parar uma entrevista?</dt>
+                    <dd>Decidir quando parar a entrevista significa equilibrar as restrições práticas e a compreensão dos dados. Certamente, todos os grupos importantes de stakeholders têm de ser cobertos. Beyer e Holtsblatt sugerem dois ou três entrevistados por papel (ou tipo de stakeholder) em três ou quatro tipos diferentes de organização.</dd>
+
+                    <dt>Quais termos usar?</dt>
+                    <dd>Os itens em um questionário devem ser o mais específico possível. Um item de sondagem como “O sistema é fácil de usar?” concede uma impressão geral, mas fornece pouca informação para o redesign se não for complementado.</dd>
+
+                    <dt>O que é diferencial semântico?</dt>
+                    <dd>
+                        Outra abordagem consiste em elaborar escalas de classificação bipolares chamadas de escalas de diferencial semântico. Elas são derivadas do trabalho de Osgood e evoluíram para se tornar uma maneira muito eficiente de revelar o que as pessoas sentem com relação a ideias, produtos e marcas.
+                        <img src="../images/escala-classificacao-bipolar.png" />
+                    </dd>
+
+                    <dt>O que é questionário de usabilidade?</dt>
+                    <dd>
+                        Para coletar requisitos e opiniões sobre características do sistema, estão disponíveis vários questionários de usabilidade, pré-preparados e já validados. Dois exemplos são:
+                        <ul>
+                            <li><strong>QUIS</strong>: Questionário de Satisfação para Interface de Usuário, do inglês Questionnaire for User Interface Satisfaction, da Universidade de Maryland.</li>
+                            <li><strong>SUMI</strong>: Inventário de Medição de Usabilidade de Software, do inglês Software Usability Measurement Inventory, da Universidade de Cork.</li>
+                        </ul>
+                        Esses são instrumentos de “qualidade industrial”, para poder usá-los normalmente é necessário pagar uma taxa.
+                    </dd>
+                </dl>
+
+                <h2>Técnicas</h2>
+                <dl>
+                    <dt>Escalas de Likert</dt>
+                    <dd>Pede-se que as pessoas indiquem sua concordância a uma afirmação usando uma escala de cinco pontos: concordo totalmente, concordo, neutro, discordo, discordo totalmente. Há também escalas de sete, quatro ou dez pontos.</dd>
+
+                    <dt>Crowdsourcing</dt>
+                    <dd>Trata-se de uma ação em que pequenas tarefas específicas são colocadas na internet, e os voluntários se inscrevem para realizá-las em troca de pagamentos simbólicos.</dd>
+
+                    <dt>Sondagens culturais</dt>
+                    <dd>Uma sondagem é uma coleção de artefatos elaborada para extrair requisitos, ideias ou opiniões em contextos específicos. As “sondagens culturais” foram desenvolvidas por Bill Gaver et al. (1999) no trabalho com idosos de três cidades europeias. O objetivo geral era criar um design de tecnologias que propiciasse maior participação deles na comunidade.</dd>
+
+                    <dt>Sondologia</dt>
+                    <dd>Em relação a colher requisitos, a filosofia por trás das sondagens culturais era um tanto diferente e ilustra bem a diferença entre extraí-los e gerá-los. Gaver (apud BEYON, 2011) argumenta que as sondagens têm a intenção de confrontar e proporcionar inspiração para os designers, por meio da tecnologia, e não de extrair requisitos específicos.</dd>
+
+                    <dt>Card sorting</dt>
+                    <dd>
+                        Card sorting é particularmente relevante no design de sites, no qual a estrutura do conteúdo é crítica. Na sua versão mais básica, implica escrever conceitos em cartões e depois agrupá-los de maneiras variadas. <br />
+                        Um grupo de pessoas trabalha com um facilitador para estruturar dados, conceitos, objetos e outros artefatos, tentando entender quais as categorias mais adequadas para agrupá-los. Isso resulta em uma taxonomia (uma classificação) em um conjunto de nível amplo, conhecido como ontologia.
+                    </dd>
+
+                    <dt>Grupos de interesse</dt>
+                    <dd>Perguntas são colocadas por facilitadores a um grupo de pessoas, estimuladas a reagir aos comentários umas das outras. Se elas fizerem parte de um grupo, pode-se pedir que descrevam como cooperam para administrar suas atividades.</dd>
+
+                    <dt>Brainstorming</dt>
+                    <dd>A organização e estruturação de sessões de brainstorming exigem estímulos, ou seja, imagens, textos ou vídeos, para que as ideias comecem a fluir. Os participantes precisarão de algo para registrar os seus pensamentos e ideias: um quadro branco, um flip-chart, papel e canetas coloridas.</dd>
+
+                    <dt>Observando in situ</dt>
+                    <dd>
+                        Atividades maiores ou mais complexas exigirão que alguém passe algum tempo no local observando da forma mais discreta possível. Todos devem estar informados do que está acontecendo e é importante obter uma permissão prévia. <br />
+                        O ideal é perceber uma gama de variações da atividade normal e de situações nas quais ocorre algum problema, embora isso talvez não seja possível em muitas ocasiões. Aqui, o ponto importante é identificar o que não foi observado, para não generalizar demais os dados.
+                    </dd>
+
+                    <dt>Etnometodologia</dt>
+                    <dd>Segundo essa ciência, regras, normas e práticas sociais não são impostas externamente ao nosso dia a dia, mas a ordem social é contínua e dinamicamente construída mediante as interações entre os indivíduos. A conclusão é que não é filosoficamente saudável generalizar além do cenário, onde a etnografia etnometodológica foi realizada, ou analisar as descobertas a partir de um ponto de vista teórico.</dd>
+
+                    <dt>Etnografia</dt>
+                    <dd>A etnografia para o design é uma área de pesquisa e atividade que está se ampliando no Design de Interação. Ela reconhece a diferença em realizar a etnografia a começar da perspectiva de um antropólogo (quando o entendimento natural é fundamental)</dd>
+                </dl>
+
+                <div class="apol">
+                    <h3>Caiu na Apol</h3>
+                    <dl>
+                        <dt>Sobre a Etnografia para o design, é correto afirmar:</dt>
+                        <dd>Ela reconhece a diferença em realizar a etnografia a começãr da perspectiva de um antropólogo (quando o entendimento natural é fundamental).</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="topico">
+            <h1>Analise</h1><small class="sub-titulo">para avaliação</small>
+            <div class="conteudo">
+                <p>É necessário tempo não só para obter os dados, mas também para analisá-los. Existe uma série de pacotes de software que ajudam na análise dos dados abundantes, que são coletados através dos estudos etnográficos. O <em>Atlas.ti</em> e <em>Etnograph</em>, por exemplo, ajudam na análise das páginas de notas em texto (não apenas das observações como também das transcrições de entrevistas e sessões em grupo) e, em alguns casos, de dados de áudio e vídeo.</p>
+
+                <div class="sub-conteudo">
+                    <h2>Coleta de artefatos</h2>
+                    <p>Dados de entrevistas, questionários e observações identificarão uma gama de artefatos na forma de itens que dão suporte a uma atividade. É intimamente possível complementar isso coletando artefatos − tais como documentos, formulários ou listagens de computador no escritório − ou filmando e fotografando itens que não podem ser removidos do lugar.</p>
+                    <p>Analisar produtos semelhantes já produzidos é outra maneira de obter ideias. Essa atitude pode ser útil porque o designer consegue ver o produto sendo usado in situ e analisar as soluções que outros propuseram. Isso ressalta as soluções boas e ruins para determinados problemas. Uma atividade pode ser realizada em local muito diferente daquela que está sendo analisada, mas pode apresentar uma estrutura semelhante.</p>
+                    <p class="no-margin-bottom">O trabalho de averiguação de requisitos deve ser documentado para comunicação e usado no design. Há duas formas de fazer isso:</p>
+                        <ul>
+                            <li>Por meio da especificação de requisitos apoiada por um material ilustrativo.</li>
+                            <li>Desenvolvendo um corpus de cenário, que começa cedo, com a construção de cenários conceituais para a exploração dos requisitos e a ilustração da sua aplicação.</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>
